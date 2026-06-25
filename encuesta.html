@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta - Proyecto Churvic</title>
+    <link rel="stylesheet" href="css/styles.css"> 
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-title-container">
+            <h1 class="site-title">Proyecto Churvic</h1>
+        </div>
+        <nav class="site-nav">
+            <button id="btn-inicio" class="btn-churvic">Inicio</button>
+            <button id="btn-encuesta" class="btn-churvic active">Encuesta Perfil</button>
+            <button id="btn-invertir" class="btn-churvic">Comienza a Invertir</button>
+        </nav>
+    </header>
+
+    <main class="blog-container">
+        <section class="post">
+            <h1 class="post-title">Perfil de Inversionista</h1>
+            <p class="post-intro">Conocer tu experiencia nos ayuda a personalizar la información y estrategias que te compartimos.</p>
+
+            <form id="crypto-form" class="survey-form">
+                <div class="form-group">
+                    <label for="nombre">Nombre o Alias *</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="¿Cómo prefieres que te llamemos?" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="experiencia">Nivel de experiencia en Crypto *</label>
+                    <select id="experiencia" name="experiencia" required>
+                        <option value="">Selecciona una opción</option>
+                        <option value="principiante">Principiante (Cero o poco conocimiento)</option>
+                        <option value="intermedio">Intermedio (Ya he comprado o hecho hold)</option>
+                        <option value="avanzado">Avanzado (Trading, Staking, DeFi)</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="intereses">¿Qué sector te interesa más? *</label>
+                    <textarea id="intereses" name="intereses" rows="3" placeholder="Ej. Bitcoin, Altcoins, NFTs, Web3..." required></textarea>
+                </div>
+
+                <button type="submit" class="btn-churvic" id="submit-btn">Guardar Perfil</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="java\script.java"></script>
+</body>
+</html>
