@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Host+Grotesk:wght@300;400;600;700&display=swap');
+
+:root {
+    --churvic-bg-dark: #0B0E14;
+    --churvic-header: #131824;
+    --churvic-accent: #2563EB;
+    --churvic-accent-hover: #1D4ED8;
+    --churvic-text-main: #FFFFFF;
+    --churvic-text-muted: #94A3B8;
+    --churvic-border: #1E293B;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Host Grotesk', sans-serif;
+    background-color: var(--churvic-bg-dark);
+    color: var(--churvic-text-main);
+    line-height: 1.6;
+}
+
+.site-header {
+    background-color: var(--churvic-header);
+    padding: 1.5rem 2rem;
+    border-bottom: 2px solid var(--churvic-border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.header-title-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.site-title {
+    color: var(--churvic-accent);
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.site-nav {
+    display: flex;
+    gap: 1rem;
+}
+
+.site-logo {
+    width: 120px; 
+    height: auto;
+    object-fit: contain; 
+}
+
+.post-image {
+    width: 100%;
+    max-height: 400px; 
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--churvic-border);
+    margin-bottom: 1.5rem;
+}
+
+.blog-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 20px;
+}
+
+.post-title {
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+.post-intro {
+    font-size: 1.1rem;
+    color: var(--churvic-text-muted);
+    font-style: italic;
+    margin-bottom: 1.5rem;
+}
+
+.post-content p, .news-item p, .video-item p {
+    margin-bottom: 1rem;
+    text-align: justify;
+}
+
+.post-analysis {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--churvic-border);
+}
+
+.section-title {
+    font-size: 1.8rem;
+    color: var(--churvic-accent);
+    margin-bottom: 1.5rem;
+}
+
+.news-item, .video-item {
+    background-color: var(--churvic-header);
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--churvic-border);
+}
+
+.video-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.subsection-title {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+    margin-bottom: 0.5rem;
+}
+
+.external-link {
+    color: var(--churvic-accent);
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.external-link:hover {
+    color: #60A5FA;
+}
+
+.btn-churvic {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: var(--churvic-text-main);
+    border: 1px solid var(--churvic-border);
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+}
+
+.btn-churvic:hover {
+    background-color: var(--churvic-border);
+}
+
+.btn-churvic.active {
+    background-color: var(--churvic-accent);
+    border-color: var(--churvic-accent);
+    color: #FFFFFF;
+}
+
+.survey-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    background-color: var(--churvic-header);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid var(--churvic-border);
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: var(--churvic-text-muted);
+}
+
+.form-group input, .form-group select, .form-group textarea {
+    padding: 0.8rem;
+    background-color: var(--churvic-bg-dark);
+    border: 1px solid var(--churvic-border);
+    color: var(--churvic-text-main);
+    border-radius: 6px;
+    font-family: inherit;
+}
+
+.form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+    outline: none;
+    border-color: var(--churvic-accent);
+}
+
+.carousel-container {
+    position: relative;
+    max-width: 600px;
+    margin: 3rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-img {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid var(--churvic-border);
+}
+
+.carousel-btn {
+    position: absolute;
+    z-index: 10;
+    background-color: var(--churvic-accent);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#btAnterior { left: -15px; }
+#btSiguiente { right: -15px; }
